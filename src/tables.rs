@@ -21766,7 +21766,7 @@ pub(crate) const COMBINING_MARK_KV: &[u32] = &[
 ];
 
 
-#[inline]
+/*#[inline]
 pub fn is_public_assigned(c: char) -> bool {
     match c {
         '\u{0000}'..='\u{0377}'
@@ -22447,7 +22447,7 @@ pub fn is_public_assigned(c: char) -> bool {
         => true,
         _ => false,
     }
-}
+}*/
 
 
 #[inline]
@@ -22575,7 +22575,7 @@ pub fn qc_nfc(c: char) -> IsNormalized {
     }
 }
 
-#[inline]
+/*#[inline]
 #[allow(ellipsis_inclusive_range_patterns)]
 pub fn qc_nfkc(c: char) -> IsNormalized {
     match c {
@@ -23012,7 +23012,7 @@ pub fn qc_nfkc(c: char) -> IsNormalized {
         '\u{11930}' => Maybe,
         _ => Yes,
     }
-}
+}*/
 
 #[inline]
 #[allow(ellipsis_inclusive_range_patterns)]
@@ -23265,7 +23265,7 @@ pub fn qc_nfd(c: char) -> IsNormalized {
     }
 }
 
-#[inline]
+/*#[inline]
 #[allow(ellipsis_inclusive_range_patterns)]
 pub fn qc_nfkd(c: char) -> IsNormalized {
     match c {
@@ -23814,7 +23814,7 @@ pub fn qc_nfkd(c: char) -> IsNormalized {
         '\u{2F800}'...'\u{2FA1D}' => No,
         _ => Yes,
     }
-}
+}*/
 
 #[inline]
 pub fn stream_safe_leading_nonstarters(c: char) -> usize {
