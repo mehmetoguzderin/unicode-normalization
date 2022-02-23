@@ -56,8 +56,8 @@ pub(crate) fn canonical_fully_decomposed(c: char) -> Option<&'static [char]> {
 pub(crate) fn compatibility_fully_decomposed(c: char) -> Option<&'static [char]> {
     mph_lookup(
         c.into(),
-        COMPATIBILITY_DECOMPOSED_SALT,
-        COMPATIBILITY_DECOMPOSED_KV,
+        CANONICAL_DECOMPOSED_SALT,
+        CANONICAL_DECOMPOSED_KV,
         pair_lookup_fk,
         pair_lookup_fv_opt,
         None,
@@ -67,8 +67,8 @@ pub(crate) fn compatibility_fully_decomposed(c: char) -> Option<&'static [char]>
 pub(crate) fn cjk_compat_variants_fully_decomposed(c: char) -> Option<&'static [char]> {
     mph_lookup(
         c.into(),
-        CJK_COMPAT_VARIANTS_DECOMPOSED_SALT,
-        CJK_COMPAT_VARIANTS_DECOMPOSED_KV,
+        CANONICAL_DECOMPOSED_SALT,
+        CANONICAL_DECOMPOSED_KV,
         pair_lookup_fk,
         pair_lookup_fv_opt,
         None,
